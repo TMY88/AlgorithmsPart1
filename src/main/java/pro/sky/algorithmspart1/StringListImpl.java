@@ -12,10 +12,14 @@ public class StringListImpl implements StringList{
     private final String[] storage;
     private int size;
 
-    public StringListImpl(String[] storage, int size) {
-        this.storage = storage;
-        this.size = size;
+    public StringListImpl(){
+        storage = new String[5];
     }
+
+    public StringListImpl(int initSize) {
+        storage = new String[initSize];
+    }
+
 
 
     @Override
